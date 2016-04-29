@@ -9,6 +9,6 @@ package testapp;
  *
  * @author ayousefi
  */
-public class WrongName {
+public class RightName {
     
 }
