@@ -6,23 +6,32 @@
 
 package Strings;
 
-import Base.*;
+import Console.*;
 
 /**
  *
  * @author Ardalan
  */
-public class UniqueChars extends Base {
+public class UniqueChars implements Runnable {
+    
+    private final OneLineReader _reader;
+    private final OneLineWriter _writer;
+    
+    public UniqueChars(){
+        _reader = new OneLineReader();
+        _writer = new OneLineWriter();
+    }
+    
     @Override
     public void run(){
-        write("Enter a string to check if it has unique characters:");
-        String input = read();
+        _writer.write("Enter a string to check if it has unique characters:");
+        String input = _reader.read();
 
         if(hasUniqueChars(input)){
-            write("It is unique!");
+            _writer.write("It is unique!");
         }
         else{
-            write("It is NOT unique :(");
+            _writer.write("It is NOT unique :(");
         }
     }
     
