@@ -16,7 +16,7 @@ public class MatrixWriter<T>{
     public void write(T[][] matrix){
         for(int i = 0; i < matrix.length; i++){
             String[] elements = new String[matrix[i].length];
-            for(int j = 0; j < matrix.length; j++){
+            for(int j = 0; j < matrix[0].length; j++){
                 elements[j]=matrix[i][j].toString();
             }
             
