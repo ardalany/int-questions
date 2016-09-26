@@ -16,6 +16,10 @@ public class LinkedList<T> {
     public LinkedList(T headValue) {
         head = new LinkedListNode<>(headValue);
     }
+    
+    public LinkedList(){
+        head=new LinkedListNode<>();
+    }
 
     public void appendToTail(T value) {
         LinkedListNode<T> node = head;
