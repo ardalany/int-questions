@@ -1,6 +1,6 @@
 package testapp;
 
-import Arrays.*;
+import LinkedList.*;
 
 /**
  *
@@ -12,7 +12,7 @@ public class MainApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Runnable runnable = new MatrixZeroer();
+        Runnable runnable = new KthToLastLinkedListNodeRetriever();
         runnable.run();
     }
     
