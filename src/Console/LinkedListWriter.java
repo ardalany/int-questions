@@ -28,6 +28,8 @@ public class LinkedListWriter<T> {
             if(currentNode.data != null){
                 nodeValues.add(currentNode.data.toString());
             }
+            
+            currentNode = currentNode.next;
         }
         
         _writer.write(String.join(", ", nodeValues));

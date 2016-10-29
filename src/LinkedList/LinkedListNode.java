@@ -16,4 +16,6 @@ public class LinkedListNode<T> {
     public LinkedListNode(T value){
         data = value;
     }
+    
+    public LinkedListNode() { }
 }
